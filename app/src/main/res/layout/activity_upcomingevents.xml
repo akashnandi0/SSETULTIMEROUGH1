@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_upcomingevents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.a2j.ssetultimerough.UPCOMINGEVENTS">
+
+    <Button
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/eventname"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/buttonregister" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="enter event id"
+        android:textColorHint="@android:color/background_dark"
+        android:textStyle="italic"
+        android:ems="10"
+        android:id="@+id/eventid"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/eventname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="enter event name"
+        android:textColorHint="@android:color/background_dark"
+        android:textStyle="italic"
+        android:ems="10"
+        android:id="@+id/eventname"
+        android:layout_below="@+id/eventid"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="enter student name"
+        android:textColorHint="@android:color/background_dark"
+        android:textStyle="italic"
+        android:ems="10"
+        android:layout_below="@+id/buttonregister"
+        android:layout_alignEnd="@+id/eventname"
+        android:id="@+id/studname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="enter student id"
+        android:textColorHint="@android:color/background_dark"
+        android:textStyle="italic"
+        android:ems="10"
+        android:layout_below="@+id/studname"
+        android:layout_alignParentStart="true"
+        android:id="@+id/studid" />
+
+</RelativeLayout>
